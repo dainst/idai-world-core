@@ -1,0 +1,17 @@
+{
+    "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+    "Collection": "crm:E73_Information_Object",
+    "Document": "crm:E73_Information_Object",
+    "Image": "crm:E73_Information_Object",
+    "Period": "crm:E4_Period",
+    "Place": "crm:E53_Place",
+    "Subject": "crm:E55_Type",
+    "describes": "crm:P129_is_about",
+    "isPartOf": "crm:P165i_is_incorporated_in",
+    "license": "crm:P104_is_subject_to",
+    "period": "crm:P67_refers_to",
+    "place": "crm:P67_refers_to",
+    "subject": "crm:P67_refers_to",
+    "begin": "crm:P82a_begin_of_the_begin",
+    "end": "crm:P82b_end_of_the_end"
+}
