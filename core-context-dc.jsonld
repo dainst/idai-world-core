@@ -1,0 +1,17 @@
+{
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "describes": "dcterms:source",
+    "isPartOf": "dcterms:isPartOf",
+    "license": "dcterms:license",
+    "period": "dcterms:temporal",
+    "place": "dcterms:spatial",
+    "subject": "dcterms:subject",
+    "creator": "dc:creator",
+    "contributor": "dc:contributor",
+    "description": "dc:description",
+    "created": "dcterms:created",
+    "identifier": "dc:identifier"
+    "lastModified": "dcterms:modified",
+    "title": "dc:title"    
+}
