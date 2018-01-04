@@ -1,0 +1,15 @@
+{
+    "@vocab": "http://idai.world/ontology/core/",
+    "label": {
+        "@container": "@language"
+    },
+    "describes": {
+        "@type": "@id"
+    },
+    "license": {
+        "@type": "@id"
+    },
+    "publisher": {
+        "@type": "@id"
+    }
+}
