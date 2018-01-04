@@ -11,7 +11,7 @@
     "contributor": "dc:contributor",
     "description": "dc:description",
     "created": "dcterms:created",
-    "identifier": "dc:identifier"
+    "identifier": "dc:identifier",
     "lastModified": "dcterms:modified",
-    "title": "dc:title"    
+    "label": "dc:title"
 }
