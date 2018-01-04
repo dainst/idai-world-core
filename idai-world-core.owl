@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.idai.world/ontology"
+     xml:base="http://idai.world/ontology/core/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.idai.world/ontology">
+     ontologyIRI="http://idai.world/ontology/core/">
     <Prefix name="" IRI="http://www.idai.world/ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -13,289 +13,289 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <DataProperty IRI="#description"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#subject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Image"/>
+        <DataProperty IRI="http://idai.world/ontology/core#description"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#lat"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#references"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#creator"/>
+        <DataProperty IRI="http://idai.world/ontology/core#begin"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Collection"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#license"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#end"/>
+        <Class IRI="http://idai.world/ontology/core#Place"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#begin"/>
+        <DataProperty IRI="http://idai.world/ontology/core#contributor"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#long"/>
+        <DataProperty IRI="http://idai.world/ontology/core#end"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#describes"/>
+        <DataProperty IRI="http://idai.world/ontology/core#lat"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#place"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#period"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Entity"/>
+        <DataProperty IRI="http://idai.world/ontology/core#lastModified"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#identifier"/>
+        <Class IRI="http://idai.world/ontology/core#Subject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Period"/>
+        <Class IRI="http://idai.world/ontology/core#Period"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Subject"/>
+        <DataProperty IRI="http://idai.world/ontology/core#identifier"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#lastModified"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#isPartOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#period"/>
+        <Class IRI="http://idai.world/ontology/core#Document"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#created"/>
+        <Class IRI="http://idai.world/ontology/core#Entity"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#title"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#describes"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Document"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#place"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#references"/>
+        <DataProperty IRI="http://idai.world/ontology/core#long"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#contributor"/>
+        <DataProperty IRI="http://idai.world/ontology/core#creator"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#subject"/>
+        <Class IRI="Collection"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#license"/>
+        <DataProperty IRI="http://idai.world/ontology/core#label"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isPartOf"/>
+        <Class IRI="http://idai.world/ontology/core#Image"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Place"/>
+        <DataProperty IRI="http://idai.world/ontology/core#created"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#Collection"/>
-        <Class IRI="#Entity"/>
+        <Class IRI="http://idai.world/ontology/core#Document"/>
+        <Class IRI="http://idai.world/ontology/core#Entity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Document"/>
-        <Class IRI="#Entity"/>
+        <Class IRI="http://idai.world/ontology/core#Image"/>
+        <Class IRI="http://idai.world/ontology/core#Document"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Image"/>
-        <Class IRI="#Document"/>
+        <Class IRI="http://idai.world/ontology/core#Period"/>
+        <Class IRI="http://idai.world/ontology/core#Entity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Period"/>
-        <Class IRI="#Entity"/>
+        <Class IRI="http://idai.world/ontology/core#Place"/>
+        <Class IRI="http://idai.world/ontology/core#Entity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Place"/>
-        <Class IRI="#Entity"/>
+        <Class IRI="http://idai.world/ontology/core#Subject"/>
+        <Class IRI="http://idai.world/ontology/core#Entity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Subject"/>
-        <Class IRI="#Entity"/>
+        <Class IRI="Collection"/>
+        <Class IRI="http://idai.world/ontology/core#Entity"/>
     </SubClassOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#period"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#period"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#describes"/>
-        <Class IRI="#Document"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#describes"/>
+        <Class IRI="http://idai.world/ontology/core#Document"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isPartOf"/>
-        <Class IRI="#Document"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#isPartOf"/>
+        <Class IRI="http://idai.world/ontology/core#Document"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#license"/>
-        <Class IRI="#Document"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#license"/>
+        <Class IRI="http://idai.world/ontology/core#Document"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#period"/>
-        <Class IRI="#Document"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#period"/>
+        <Class IRI="http://idai.world/ontology/core#Document"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#place"/>
-        <Class IRI="#Document"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#place"/>
+        <Class IRI="http://idai.world/ontology/core#Document"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#references"/>
-        <Class IRI="#Document"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#references"/>
+        <Class IRI="http://idai.world/ontology/core#Document"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#subject"/>
-        <Class IRI="#Document"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#subject"/>
+        <Class IRI="http://idai.world/ontology/core#Document"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#describes"/>
-        <Class IRI="#Entity"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#describes"/>
+        <Class IRI="http://idai.world/ontology/core#Entity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isPartOf"/>
-        <Class IRI="#Collection"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#isPartOf"/>
+        <Class IRI="Collection"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#period"/>
-        <Class IRI="#Period"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#period"/>
+        <Class IRI="http://idai.world/ontology/core#Period"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#place"/>
-        <Class IRI="#Place"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#place"/>
+        <Class IRI="http://idai.world/ontology/core#Place"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#references"/>
-        <Class IRI="#Document"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#references"/>
+        <Class IRI="http://idai.world/ontology/core#Document"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#subject"/>
-        <Class IRI="#Subject"/>
+        <ObjectProperty IRI="http://idai.world/ontology/core#subject"/>
+        <Class IRI="http://idai.world/ontology/core#Subject"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
-        <DataProperty IRI="#contributor"/>
+        <DataProperty IRI="http://idai.world/ontology/core#contributor"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#creator"/>
+        <DataProperty IRI="http://idai.world/ontology/core#creator"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
-        <DataProperty IRI="#begin"/>
-        <Class IRI="#Period"/>
+        <DataProperty IRI="http://idai.world/ontology/core#begin"/>
+        <Class IRI="http://idai.world/ontology/core#Period"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#contributor"/>
-        <Class IRI="#Document"/>
+        <DataProperty IRI="http://idai.world/ontology/core#contributor"/>
+        <Class IRI="http://idai.world/ontology/core#Document"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#created"/>
-        <Class IRI="#Document"/>
+        <DataProperty IRI="http://idai.world/ontology/core#created"/>
+        <Class IRI="http://idai.world/ontology/core#Document"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#description"/>
-        <Class IRI="#Entity"/>
+        <DataProperty IRI="http://idai.world/ontology/core#description"/>
+        <Class IRI="http://idai.world/ontology/core#Entity"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#end"/>
-        <Class IRI="#Period"/>
+        <DataProperty IRI="http://idai.world/ontology/core#end"/>
+        <Class IRI="http://idai.world/ontology/core#Period"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#identifier"/>
-        <Class IRI="#Entity"/>
+        <DataProperty IRI="http://idai.world/ontology/core#identifier"/>
+        <Class IRI="http://idai.world/ontology/core#Entity"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#lastModified"/>
-        <Class IRI="#Document"/>
+        <DataProperty IRI="http://idai.world/ontology/core#label"/>
+        <Class IRI="http://idai.world/ontology/core#Entity"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#lat"/>
-        <Class IRI="#Place"/>
+        <DataProperty IRI="http://idai.world/ontology/core#lastModified"/>
+        <Class IRI="http://idai.world/ontology/core#Document"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#long"/>
-        <Class IRI="#Place"/>
+        <DataProperty IRI="http://idai.world/ontology/core#lat"/>
+        <Class IRI="http://idai.world/ontology/core#Place"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#title"/>
-        <Class IRI="#Entity"/>
+        <DataProperty IRI="http://idai.world/ontology/core#long"/>
+        <Class IRI="http://idai.world/ontology/core#Place"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="#begin"/>
+        <DataProperty IRI="http://idai.world/ontology/core#begin"/>
         <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#contributor"/>
+        <DataProperty IRI="http://idai.world/ontology/core#contributor"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#created"/>
+        <DataProperty IRI="http://idai.world/ontology/core#created"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#description"/>
+        <DataProperty IRI="http://idai.world/ontology/core#description"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#end"/>
+        <DataProperty IRI="http://idai.world/ontology/core#end"/>
         <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#identifier"/>
+        <DataProperty IRI="http://idai.world/ontology/core#identifier"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#lastModified"/>
+        <DataProperty IRI="http://idai.world/ontology/core#label"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://idai.world/ontology/core#lastModified"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#lat"/>
+        <DataProperty IRI="http://idai.world/ontology/core#lat"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#long"/>
+        <DataProperty IRI="http://idai.world/ontology/core#long"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#title"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Collection</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class represents aggregations of digital documents and can be used to create identifiable sets.
-
-Examples:
-- All documents created in the Emagines project
-- All documents about objects in the catalog of Palilia 24
-- All images digitized by the photo archive of the DAI Rome</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Document</IRI>
+        <IRI>http://idai.world/ontology/core#Document</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class comprises all kinds of digital documents that can be processed by computers. As such it dffers from E31 Document in CIDOC-CRM which comprises immaterial items that can be represented in different analog and digital documents.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Entity</IRI>
+        <IRI>http://idai.world/ontology/core#Entity</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is the base class for all entities in iDAI.world core. It corresponds to E1 Entity in the CIDOC-CRM.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Image</IRI>
+        <IRI>http://idai.world/ontology/core#Image</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class represents digital image documents.
 
 As such it should not be confused with E38 Image in CIDOC-CRM which comprises conceptual visual items that can be reproduced in different analog and digital documents.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Period</IRI>
+        <IRI>http://idai.world/ontology/core#Period</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class corresponds to E4 Period in the CIDOC-CRM.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Place</IRI>
+        <IRI>http://idai.world/ontology/core#Place</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class corresponds to E53 Place in the CIDOC-CRM.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Subject</IRI>
+        <IRI>http://idai.world/ontology/core#Subject</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class corresponds to E55 Type in the CIDOC-CRM and Concept in SKOS.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Collection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class represents aggregations of digital documents and can be used to create identifiable sets.
+
+Examples:
+- All documents created in the Emagines project
+- All documents about objects in the catalog of Palilia 24
+- All images digitized by the photo archive of the DAI Rome</Literal>
     </AnnotationAssertion>
 </Ontology>
 
