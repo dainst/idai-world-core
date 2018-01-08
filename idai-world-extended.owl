@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://idai.world/ontology/core/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://idai.world/ontology/core/">
+    <Prefix name="" IRI="http://idai.world/ontology/core/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <DataProperty IRI="lat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="related"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="license"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Agent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="created"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="end"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="creator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Image"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="contributor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="3DModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="period"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="literature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Place"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="format"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Inscription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="topic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Document"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Institution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Text"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="title"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="collector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Period"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="File"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="long"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="begin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="lastModified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Artifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GeoreferencedImage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Entity"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Agent"/>
+        <Class IRI="Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Artifact"/>
+        <Class IRI="Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Collection"/>
+        <Class IRI="Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Document"/>
+        <Class IRI="Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="File"/>
+        <Class IRI="Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GeoreferencedImage"/>
+        <Class IRI="Image"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Image"/>
+        <Class IRI="Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Inscription"/>
+        <Class IRI="Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Institution"/>
+        <Class IRI="Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Object"/>
+        <Class IRI="Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Period"/>
+        <Class IRI="Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Person"/>
+        <Class IRI="Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Place"/>
+        <Class IRI="Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Project"/>
+        <Class IRI="Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Structure"/>
+        <Class IRI="Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Subject"/>
+        <Class IRI="Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Text"/>
+        <Class IRI="Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="3DModel"/>
+        <Class IRI="Document"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="period"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="topic"/>
+        <ObjectProperty IRI="subject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="type"/>
+        <ObjectProperty IRI="subject"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="collector"/>
+        <Class IRI="Collection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="entity"/>
+        <Class IRI="File"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="license"/>
+        <Class IRI="File"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="literature"/>
+        <Class IRI="Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="part"/>
+        <Class IRI="Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="period"/>
+        <Class IRI="Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="place"/>
+        <Class IRI="Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="project"/>
+        <Class IRI="File"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="related"/>
+        <Class IRI="Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="subject"/>
+        <Class IRI="Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="collector"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="entity"/>
+        <Class IRI="Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="literature"/>
+        <Class IRI="Text"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="part"/>
+        <Class IRI="Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="period"/>
+        <Class IRI="Period"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="place"/>
+        <Class IRI="Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="project"/>
+        <Class IRI="Project"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="related"/>
+        <Class IRI="Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="subject"/>
+        <Class IRI="Subject"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="contributor"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="creator"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="begin"/>
+        <Class IRI="Period"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="contributor"/>
+        <Class IRI="Document"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="created"/>
+        <Class IRI="Document"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="creator"/>
+        <Class IRI="Document"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="description"/>
+        <Class IRI="Entity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="end"/>
+        <Class IRI="Period"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="format"/>
+        <Class IRI="File"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="identifier"/>
+        <Class IRI="Entity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="lastModified"/>
+        <Class IRI="Document"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="lat"/>
+        <Class IRI="Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="long"/>
+        <Class IRI="Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="title"/>
+        <Class IRI="Entity"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="begin"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="contributor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="created"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="creator"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="end"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="identifier"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="lastModified"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="lat"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="long"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Artifact</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any kind of physical artifact that might be of relevance to archaeology. This includes cultural, biological and geological artifacts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Collection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any set of physical objects curated by a person or institution. Corresponds to E78 Collection in the CIDOC-CRM.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Document</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class comprises all kinds of digital documents that can be processed by computers. As such it dffers from E31 Document in CIDOC-CRM which comprises immaterial items that can be represented in different analog and digital documents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Entity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is the base class for all entities in iDAI.world core. It corresponds to E1 Entity in the CIDOC-CRM.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>File</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">All kinds of electronically encoded, machine-readable documents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Object</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents all types of objects that have a physical extent. Corresponds to E18 Physical Thing in the CIDOC-CRM.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Period</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class corresponds to E4 Period in the CIDOC-CRM.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Place</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class corresponds to E53 Place in the CIDOC-CRM.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Project</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class represents aggregations of digital documents and can be used to create identifiable sets.
+
+Examples:
+- All documents created in the Emagines project
+- All documents about objects in the catalog of Palilia 24
+- All images digitized by the photo archive of the DAI Rome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Structure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any man-made architectural structure used or intended for supporting or sheltering any use or continuous occupancy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Subject</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class corresponds to E55 Type in the CIDOC-CRM and Concept in SKOS.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Text</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class represents documents that primarily contain text, such as books, articles or letters.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
