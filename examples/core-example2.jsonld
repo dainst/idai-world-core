@@ -1,14 +1,14 @@
 {
     "@id": "http://gazetteer.dainst.org/doc/2323295",
     "@type": "Document",
-    "describes": "http://gazetteer.dainst.org/place/2323295",
+    "entity": "http://gazetteer.dainst.org/place/2323295",
     "label": {
         "de": "Rom",
         "en": "Rome",
         "it": "Roma"
     },
     "identifier": "2323295",
-    "description": "Lage: Breite 41.89143, Länge 12.49362  (Genauigkeit: Exakt)
+    "content": "Lage: Breite 41.89143, Länge 12.49362  (Genauigkeit: Exakt)
 Art: Bewohnter Ort, Archäologischer Ort
 Provenienz: geonames",
     "subject": [
@@ -55,7 +55,7 @@ Provenienz: geonames",
             "long": 12.83333
         }
     ],
-    "references": [
+    "reference": [
         {
             "@id": "https://gazetteer.dainst.org/doc/2072749",
             "@type": "Document",

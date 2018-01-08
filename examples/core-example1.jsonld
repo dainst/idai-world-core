@@ -1,12 +1,12 @@
 {
     "@id": "http://arachne.dainst.org/data/entity/5640",
     "@type": "Document",
-    "describes": "http://arachne.dainst.org/entity/5640",
+    "entity": "http://arachne.dainst.org/entity/5640",
     "label": {
         "de": "Baukomplex der Basilica Aemilia"
     },
     "identifier": "5640",
-    "description": "Situation: Die Basilica liegt an der Nordseite des Forum Romanum zwischen der Curia und dem Tempel des Antoninus und der Faustina.
+    "content": "Situation: Die Basilica liegt an der Nordseite des Forum Romanum zwischen der Curia und dem Tempel des Antoninus und der Faustina.
 Antike Landschaft: Latium
 Regio Rom/Italien: Regio VIII
 Kulturepoche: römisch
@@ -112,28 +112,32 @@ Bemerkungen: Es ist immer noch unklar, ob die Basilica Aemilia identisch mit der
             "end": 600
         }
     ],
-    "references": [
+    "literature": [
         {
             "@id": "http://zenon.dainst.org/Record/000314366",
-            "@type": "Document",
+            "@type": "Literature",
             "label": {
                 "de": "E. Nash, Bildlexikon zur Topographie des antiken Rom I (Tübingen 1961), 174, Abb. 188-199"
             }
         },
         {
             "@id": "http://zenon.dainst.org/Record/000250584",
-            "@type": "Document",
+            "@type": "Literature",
             "label": {
                 "de": "F. Coarelli, Il Foro Romano II (Rom 1985), 201 ff."
             }
-        },
+        }
+    ],
+    "reference": [
         {
             "@id": "http://arachne.dainst.org/data/entity/12626",
             "@type": "Document",
             "label": {
                 "de": "Basilica Aemilia. Rekonstruktion Innen"
             }
-        },
+        }
+    ],
+    "image": [
         {
             "@id": "http://arachne.dainst.org/data/image/6026709",
             "@type": "Image",
@@ -142,7 +146,7 @@ Bemerkungen: Es ist immer noch unklar, ob die Basilica Aemilia identisch mit der
             }
         }
     ],
-    "isPartOf": [
+    "collection": [
         {
             "@id": "https://arachne.dainst.org/catalog/27",
             "@type": "Collection",

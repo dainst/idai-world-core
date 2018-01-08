@@ -6,12 +6,14 @@
     "Period": "crm:E4_Period",
     "Place": "crm:E53_Place",
     "Subject": "crm:E55_Type",
-    "describes": "crm:P129_is_about",
-    "isPartOf": "crm:P165i_is_incorporated_in",
+    "entity": "crm:P129_is_about",
+    "collection": "crm:P165i_is_incorporated_in",
     "license": "crm:P104_is_subject_to",
     "period": "crm:P67_refers_to",
     "place": "crm:P67_refers_to",
     "subject": "crm:P67_refers_to",
+    "literature": "crm:P67_refers_to",
+    "reference": "crm:P67_refers_to",
     "begin": "crm:P82a_begin_of_the_begin",
     "end": "crm:P82b_end_of_the_end"
 }

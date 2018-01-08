@@ -1,17 +1,19 @@
 {
     "dc": "http://purl.org/dc/elements/1.1/",
     "dcterms": "http://purl.org/dc/terms/",
-    "describes": "dcterms:source",
-    "isPartOf": "dcterms:isPartOf",
+    "entity": "dcterms:source",
+    "collection": "dcterms:isPartOf",
     "license": "dcterms:license",
     "period": "dcterms:temporal",
     "place": "dcterms:spatial",
     "subject": "dcterms:subject",
     "creator": "dc:creator",
     "contributor": "dc:contributor",
-    "description": "dc:description",
+    "description": "dcterms:description",
     "created": "dcterms:created",
-    "identifier": "dc:identifier",
+    "identifier": "dcterms:identifier",
     "lastModified": "dcterms:modified",
-    "label": "dc:title"
+    "title": "dcterms:title",
+    "literature": "dcterms:references",
+    "reference": "dcterms:relation"
 }
