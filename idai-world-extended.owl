@@ -16,16 +16,13 @@
         <DataProperty IRI="coordinates"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="lat"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="related"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="license"/>
+        <Class IRI="Record"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Record"/>
+        <ObjectProperty IRI="license"/>
     </Declaration>
     <Declaration>
         <Class IRI="Agent"/>
@@ -55,10 +52,10 @@
         <Class IRI="Place"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Geometry"/>
+        <DataProperty IRI="description"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="description"/>
+        <Class IRI="Geometry"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="format"/>
@@ -85,13 +82,13 @@
         <Class IRI="Polygon"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="title"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Institution"/>
     </Declaration>
     <Declaration>
         <Class IRI="Text"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="title"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="type"/>
@@ -100,16 +97,19 @@
         <Class IRI="Point"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="geometry"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="InformationObject"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="part"/>
     </Declaration>
     <Declaration>
-        <Class IRI="MultiPolygon"/>
+        <Class IRI="DigitalObject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="DigitalObject"/>
+        <Class IRI="MultiPolygon"/>
     </Declaration>
     <Declaration>
         <Class IRI="Period"/>
@@ -124,16 +124,13 @@
         <Class IRI="File"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="long"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="MultiLineString"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="begin"/>
+        <DataProperty IRI="lastModified"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="lastModified"/>
+        <DataProperty IRI="begin"/>
     </Declaration>
     <Declaration>
         <Class IRI="PhysicalObject"/>
@@ -251,6 +248,10 @@
         <Class IRI="File"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="geometry"/>
+        <Class IRI="Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="license"/>
         <Class IRI="InformationObject"/>
     </ObjectPropertyDomain>
@@ -285,6 +286,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="entity"/>
         <Class IRI="Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="geometry"/>
+        <Class IRI="Geometry"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="literature"/>
@@ -359,14 +364,6 @@
         <Class IRI="InformationObject"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="lat"/>
-        <Class IRI="Place"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="long"/>
-        <Class IRI="Place"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="title"/>
         <Class IRI="Entity"/>
     </DataPropertyDomain>
@@ -401,14 +398,6 @@
     <DataPropertyRange>
         <DataProperty IRI="lastModified"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="lat"/>
-        <Datatype abbreviatedIRI="xsd:decimal"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="long"/>
-        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="title"/>
