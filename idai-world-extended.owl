@@ -133,13 +133,13 @@
         <DataProperty IRI="begin"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PhysicalObject"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Person"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PhysicalThing"/>
     </Declaration>
     <Declaration>
         <Class IRI="Dataset"/>
@@ -200,12 +200,12 @@
         <Class IRI="Agent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="PhysicalObject"/>
+        <Class IRI="PhysicalThing"/>
         <Class IRI="Entity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Place"/>
-        <Class IRI="PhysicalObject"/>
+        <Class IRI="PhysicalThing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Point"/>
@@ -249,7 +249,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="geometry"/>
-        <Class IRI="PhysicalObject"/>
+        <Class IRI="PhysicalThing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="license"/>
@@ -445,8 +445,8 @@ Examples:
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>PhysicalObject</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents all types of objects that have a physical extent. Corresponds to E18 Physical Thing in the CIDOC-CRM.</Literal>
+        <IRI>PhysicalThing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents all types of things that have a physical extent. Corresponds to E18 Physical Thing in the CIDOC-CRM.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
