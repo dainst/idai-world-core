@@ -205,7 +205,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Place"/>
-        <Class IRI="Entity"/>
+        <Class IRI="PhysicalObject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Point"/>
@@ -245,11 +245,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="entity"/>
-        <Class IRI="File"/>
+        <Class IRI="Record"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="geometry"/>
-        <Class IRI="Place"/>
+        <Class IRI="PhysicalObject"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="license"/>
@@ -451,7 +451,7 @@ Examples:
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Place</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class corresponds to E53 Place in the CIDOC-CRM.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class corresponds to E27 Site in the CIDOC-CRM.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
