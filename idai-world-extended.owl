@@ -13,6 +13,9 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <DataProperty IRI="coordinates"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="lat"/>
     </Declaration>
     <Declaration>
@@ -22,7 +25,7 @@
         <ObjectProperty IRI="license"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Structure"/>
+        <Class IRI="Record"/>
     </Declaration>
     <Declaration>
         <Class IRI="Agent"/>
@@ -43,22 +46,16 @@
         <DataProperty IRI="contributor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="3DModel"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="period"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="literature"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="project"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Object"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Geometry"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="description"/>
@@ -70,7 +67,7 @@
         <DataProperty IRI="identifier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Inscription"/>
+        <ObjectProperty IRI="dataset"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="topic"/>
@@ -79,10 +76,13 @@
         <ObjectProperty IRI="subject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Document"/>
+        <ObjectProperty IRI="entity"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="entity"/>
+        <Class IRI="LineString"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Polygon"/>
     </Declaration>
     <Declaration>
         <Class IRI="Institution"/>
@@ -94,19 +94,31 @@
         <DataProperty IRI="title"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="collector"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="type"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Point"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="InformationObject"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MultiPolygon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DigitalObject"/>
     </Declaration>
     <Declaration>
         <Class IRI="Period"/>
     </Declaration>
     <Declaration>
         <Class IRI="Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Event"/>
     </Declaration>
     <Declaration>
         <Class IRI="File"/>
@@ -115,19 +127,16 @@
         <DataProperty IRI="long"/>
     </Declaration>
     <Declaration>
+        <Class IRI="MultiLineString"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="begin"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="lastModified"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Artifact"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Collection"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="GeoreferencedImage"/>
+        <Class IRI="PhysicalObject"/>
     </Declaration>
     <Declaration>
         <Class IRI="Person"/>
@@ -136,7 +145,7 @@
         <ObjectProperty IRI="place"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Project"/>
+        <Class IRI="Dataset"/>
     </Declaration>
     <Declaration>
         <Class IRI="Entity"/>
@@ -146,40 +155,44 @@
         <Class IRI="Entity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Artifact"/>
-        <Class IRI="Object"/>
+        <Class IRI="Dataset"/>
+        <Class IRI="InformationObject"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Collection"/>
-        <Class IRI="Object"/>
+        <Class IRI="DigitalObject"/>
+        <Class IRI="InformationObject"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Document"/>
-        <Class IRI="Entity"/>
+        <Class IRI="Event"/>
+        <Class IRI="Period"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="File"/>
-        <Class IRI="Document"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GeoreferencedImage"/>
-        <Class IRI="Image"/>
+        <Class IRI="DigitalObject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Image"/>
-        <Class IRI="Document"/>
+        <Class IRI="InformationObject"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Inscription"/>
-        <Class IRI="Document"/>
+        <Class IRI="InformationObject"/>
+        <Class IRI="Entity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Institution"/>
         <Class IRI="Agent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Object"/>
-        <Class IRI="Entity"/>
+        <Class IRI="LineString"/>
+        <Class IRI="Geometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MultiLineString"/>
+        <Class IRI="Geometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MultiPolygon"/>
+        <Class IRI="Geometry"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Period"/>
@@ -190,16 +203,24 @@
         <Class IRI="Agent"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="PhysicalObject"/>
+        <Class IRI="Entity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Place"/>
         <Class IRI="Entity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Project"/>
-        <Class IRI="Entity"/>
+        <Class IRI="Point"/>
+        <Class IRI="Geometry"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Structure"/>
-        <Class IRI="Object"/>
+        <Class IRI="Polygon"/>
+        <Class IRI="Geometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Record"/>
+        <Class IRI="DigitalObject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Subject"/>
@@ -207,11 +228,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Text"/>
-        <Class IRI="Document"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="3DModel"/>
-        <Class IRI="Document"/>
+        <Class IRI="InformationObject"/>
     </SubClassOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="period"/>
@@ -226,8 +243,8 @@
         <ObjectProperty IRI="subject"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="collector"/>
-        <Class IRI="Collection"/>
+        <ObjectProperty IRI="dataset"/>
+        <Class IRI="InformationObject"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="entity"/>
@@ -235,7 +252,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="license"/>
-        <Class IRI="File"/>
+        <Class IRI="InformationObject"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="literature"/>
@@ -254,10 +271,6 @@
         <Class IRI="Entity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="project"/>
-        <Class IRI="File"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="related"/>
         <Class IRI="Entity"/>
     </ObjectPropertyDomain>
@@ -266,8 +279,8 @@
         <Class IRI="Entity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="collector"/>
-        <Class IRI="Agent"/>
+        <ObjectProperty IRI="dataset"/>
+        <Class IRI="Dataset"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="entity"/>
@@ -288,10 +301,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="place"/>
         <Class IRI="Place"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="project"/>
-        <Class IRI="Project"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="related"/>
@@ -315,15 +324,19 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="contributor"/>
-        <Class IRI="Document"/>
+        <Class IRI="InformationObject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="coordinates"/>
+        <Class IRI="Geometry"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="created"/>
-        <Class IRI="Document"/>
+        <Class IRI="InformationObject"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="creator"/>
-        <Class IRI="Document"/>
+        <Class IRI="InformationObject"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="description"/>
@@ -343,7 +356,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="lastModified"/>
-        <Class IRI="Document"/>
+        <Class IRI="InformationObject"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="lat"/>
@@ -403,18 +416,20 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Artifact</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any kind of physical artifact that might be of relevance to archaeology. This includes cultural, biological and geological artifacts.</Literal>
+        <IRI>Dataset</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class represents collections of information objects. Datasets can therefore serve as an organizing unit for digital documents especially to make sets of single records identifiable.
+
+Datasets do not have to be decomposed into single record descriptions. This allows data to be described and retrieved even if it is not mapped on an item level.
+
+Examples:
+- All records created in the Emagines project
+- All images belonging to the DAI Rome&apos;s photo archive
+- The Barrington Atlas roads layer in the geoserver</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Collection</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any set of physical objects curated by a person or institution. Corresponds to E78 Collection in the CIDOC-CRM.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Document</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class comprises all kinds of digital documents that can be processed by computers. As such it dffers from E31 Document in CIDOC-CRM which comprises immaterial items that can be represented in different analog and digital documents.</Literal>
+        <IRI>DigitalObject</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">All kinds of electronically encoded, machine-readable documents.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -424,17 +439,25 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>File</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">All kinds of electronically encoded, machine-readable documents.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The single unit of a computer file system.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Object</IRI>
+        <IRI>Image</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class comprises distributions of form, tone and colour that may be found on surfaces such as photos, paintings, prints and sculptures or directly on electronic media.
+
+The same image can be found on different carriers. For example the same photograph can be represented in a negative, a print and several electronic files in different formats.
+
+Corresponds to E38 Image in the CIDOC-CRM.
+
+Examples:
+- The photo with number D-DAI-ATH-2014-01000
+- The reconstruction of the Basilica Aemilia created by Florian Willems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PhysicalObject</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents all types of objects that have a physical extent. Corresponds to E18 Physical Thing in the CIDOC-CRM.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Period</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class corresponds to E4 Period in the CIDOC-CRM.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -443,18 +466,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Project</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class represents aggregations of digital documents and can be used to create identifiable sets.
-
-Examples:
-- All documents created in the Emagines project
-- All documents about objects in the catalog of Palilia 24
-- All images digitized by the photo archive of the DAI Rome</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any man-made architectural structure used or intended for supporting or sheltering any use or continuous occupancy.</Literal>
+        <IRI>Record</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The single unit of computer system for structured data (e.g. a relational database or document store).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -465,6 +478,11 @@ Examples:
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Text</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class represents documents that primarily contain text, such as books, articles or letters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>format</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The MIME type of the file.</Literal>
     </AnnotationAssertion>
 </Ontology>
 
