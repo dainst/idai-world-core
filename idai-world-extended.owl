@@ -16,6 +16,9 @@
         <DataProperty IRI="coordinates"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="spatial"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="related"/>
     </Declaration>
     <Declaration>
@@ -43,10 +46,13 @@
         <DataProperty IRI="contributor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="period"/>
+        <ObjectProperty IRI="references"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="literature"/>
+        <ObjectProperty IRI="isAbout"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="temporal"/>
     </Declaration>
     <Declaration>
         <Class IRI="Place"/>
@@ -64,16 +70,16 @@
         <DataProperty IRI="identifier"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="dataset"/>
+        <ObjectProperty IRI="isA"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="topic"/>
+        <ObjectProperty IRI="dataset"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="subject"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="entity"/>
+        <ObjectProperty IRI="isPartOf"/>
     </Declaration>
     <Declaration>
         <Class IRI="LineString"/>
@@ -85,13 +91,16 @@
         <DataProperty IRI="title"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="image"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Institution"/>
     </Declaration>
     <Declaration>
         <Class IRI="Text"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="type"/>
+        <DataProperty IRI="abstract"/>
     </Declaration>
     <Declaration>
         <Class IRI="Point"/>
@@ -101,9 +110,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="InformationObject"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="part"/>
     </Declaration>
     <Declaration>
         <Class IRI="DigitalObject"/>
@@ -136,9 +142,6 @@
         <Class IRI="Person"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="place"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="PhysicalThing"/>
     </Declaration>
     <Declaration>
@@ -228,47 +231,51 @@
         <Class IRI="InformationObject"/>
     </SubClassOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="period"/>
+        <ObjectProperty IRI="dataset"/>
+        <ObjectProperty IRI="isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isA"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="topic"/>
+        <ObjectProperty IRI="isAbout"/>
         <ObjectProperty IRI="subject"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="type"/>
-        <ObjectProperty IRI="subject"/>
+        <ObjectProperty IRI="temporal"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="dataset"/>
         <Class IRI="InformationObject"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="entity"/>
+        <ObjectProperty IRI="geometry"/>
+        <Class IRI="PhysicalThing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="image"/>
+        <Class IRI="Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isA"/>
+        <Class IRI="Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isAbout"/>
         <Class IRI="Record"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="geometry"/>
-        <Class IRI="PhysicalThing"/>
+        <ObjectProperty IRI="isPartOf"/>
+        <Class IRI="Entity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="license"/>
         <Class IRI="InformationObject"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="literature"/>
-        <Class IRI="Entity"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="part"/>
-        <Class IRI="Entity"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="period"/>
-        <Class IRI="Entity"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="place"/>
+        <ObjectProperty IRI="references"/>
         <Class IRI="Entity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -276,7 +283,15 @@
         <Class IRI="Entity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="spatial"/>
+        <Class IRI="Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="subject"/>
+        <Class IRI="Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="temporal"/>
         <Class IRI="Entity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
@@ -284,36 +299,44 @@
         <Class IRI="Dataset"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="entity"/>
-        <Class IRI="Entity"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="geometry"/>
         <Class IRI="Geometry"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="literature"/>
-        <Class IRI="Text"/>
+        <ObjectProperty IRI="image"/>
+        <Class IRI="Image"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="part"/>
+        <ObjectProperty IRI="isA"/>
+        <Class IRI="Subject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isAbout"/>
         <Class IRI="Entity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="period"/>
-        <Class IRI="Period"/>
+        <ObjectProperty IRI="isPartOf"/>
+        <Class IRI="Entity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="place"/>
-        <Class IRI="Place"/>
+        <ObjectProperty IRI="references"/>
+        <Class IRI="Text"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="related"/>
         <Class IRI="Entity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="spatial"/>
+        <Class IRI="Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="subject"/>
         <Class IRI="Subject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="temporal"/>
+        <Class IRI="Period"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="contributor"/>
@@ -323,6 +346,10 @@
         <DataProperty IRI="creator"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="abstract"/>
+        <Class IRI="Entity"/>
+    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="begin"/>
         <Class IRI="Period"/>
@@ -367,6 +394,10 @@
         <DataProperty IRI="title"/>
         <Class IRI="Entity"/>
     </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="abstract"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="begin"/>
         <Datatype abbreviatedIRI="xsd:int"/>

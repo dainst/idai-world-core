@@ -1,6 +1,6 @@
 {
     "@vocab": "http://idai.world/ontology/core/",
-    "label": {
+    "title": {
         "@container": "@language"
     },
     "describes": {

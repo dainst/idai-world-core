@@ -1,9 +1,53 @@
 {
     "@id": "http://arachne.dainst.org/data/entity/5640",
     "@type": "Record",
-    "entity": {
+    "source": "http://arachne.dainst.org",
+    "creator": {
+        "title": "S.V."
+    },
+    "contributor": [
+        { "title": "Paul Scheding" },
+        { "title": "R. Förtsch" },
+        { "title": "Julia Barbara Ochmann" },
+        { "title": "Johannes Lipps" }
+    ],
+    "created": "1998-08-17",
+    "lastModified": "2014-08-08",
+    "license": "http://creativecommons.org/licenses/by-nc-nd/3.0/de/",
+    "isAbout": {
         "@id": "http://arachne.dainst.org/entity/5640",
-        "label": {
+        "@type": "PhysicalThing",
+        "isA": [
+            {
+                "@id": "http://thesauri.dainst.org/_1c0fa2d2",
+                "@type": "Subject",
+                "title": {
+                    "de": "Objekte"
+                }
+            },
+            {
+                "@id": "http://thesauri.dainst.org/_89539c65",
+                "@type": "Subject",
+                "title": {
+                    "de": "Bauten"
+                }
+            },
+            {
+                "@id": "http://thesauri.dainst.org/_b507784b",
+                "@type": "Subject",
+                "title": {
+                    "de": "Öffentliche Bauten"
+                }
+            },
+            {
+                "@id": "http://thesauri.dainst.org/_f81118e5",
+                "@type": "Subject",
+                "title": {
+                    "de": "Basiliken"
+                }
+            }
+        ],
+        "title": {
             "de": "Baukomplex der Basilica Aemilia"
         },
         "identifier": "5640",
@@ -21,28 +65,32 @@
     Bemerkungen: Es ist immer noch unklar, ob die Basilica Aemilia identisch mit der Basilica Fulvia ist.",
         "subject": [
             {
-                "@id": "http://thesauri.dainst.org/_2746",
+                "@id": "http://thesauri.dainst.org/_89539c65",
                 "@type": "Subject",
-                "label": {
-                    "de": "Basilika",
-                    "en": "basilica",
-                    "fr": "basilique",
-                    "it": "basilica"
+                "title": {
+                    "de": "Bauten"
                 }
             },
             {
-                "@id": "http://thesauri.dainst.org/_1d96b54c",
+                "@id": "http://thesauri.dainst.org/_b507784b",
                 "@type": "Subject",
-                "label": {
-                    "de": "Bauwerke"
+                "title": {
+                    "de": "Öffentliche Bauten"
+                }
+            },
+            {
+                "@id": "http://thesauri.dainst.org/_f81118e5",
+                "@type": "Subject",
+                "title": {
+                    "de": "Basiliken"
                 }
             }
         ],
-        "place": [
+        "spatial": [
             {
                 "@id": "http://gazetteer.dainst.org/place/2093895",
                 "@type": "Place",
-                "label": {
+                "title": {
                     "de": "Baukomplex der Basilica Aemilia"
                 },
                 "geometry": {
@@ -53,7 +101,7 @@
             {
                 "@id": "http://gazetteer.dainst.org/place/2093883",
                 "@type": "Place",
-                "label": {
+                "title": {
                     "de": "Forum Romanum",
                     "it": "Foro Romano"
                 },
@@ -65,7 +113,7 @@
             {
                 "@id": "http://gazetteer.dainst.org/place/2323295",
                 "@type": "Place",
-                "label": {
+                "title": {
                     "it": "Roma",
                     "ar": "روما",
                     "de": "Rom",
@@ -80,7 +128,7 @@
             {
         		"@id": "http://gazetteer.dainst.org/place/2309807",
                 "@type": "Place",
-                "label": {
+                "title": {
                     "it": "Italia",
                     "ar": "إيطاليا",
                     "de": "Italien",
@@ -93,11 +141,11 @@
                 }
             }
         ],
-        "period": [
+        "temporal": [
             {
                 "@id": "http://chronontology.dainst.org/period/EjdISVTsTkyh",
                 "@type": "Period",
-                "label": {
+                "title": {
                     "de": "Republikanisch",
                     "en": "Republican"
                 }
@@ -105,7 +153,7 @@
             {
                 "@id": "http://chronontology.dainst.org/period/4CgMSXuA85AL",
                 "@type": "Period",
-                "label": {
+                "title": {
                     "de": "Römisch",
                     "en": "Roman"
                 }
@@ -113,7 +161,7 @@
             {
                 "@id": "http://chronontology.dainst.org/period/LgCdcG02kRtJ",
                 "@type": "Period",
-                "label": {
+                "title": {
                     "de": "Klassische Antike",
                     "en": "Roman"
                 },
@@ -121,38 +169,39 @@
                 "end": 600
             }
         ],
-        "literature": [
+        "references": [
             {
                 "@id": "http://zenon.dainst.org/Record/000314366",
-                "@type": "Literature",
-                "label": {
+                "@type": "Text",
+                "title": {
                     "de": "E. Nash, Bildlexikon zur Topographie des antiken Rom I (Tübingen 1961), 174, Abb. 188-199"
                 }
             },
             {
                 "@id": "http://zenon.dainst.org/Record/000250584",
-                "@type": "Literature",
-                "label": {
+                "@type": "Text",
+                "title": {
                     "de": "F. Coarelli, Il Foro Romano II (Rom 1985), 201 ff."
                 }
             }
         ],
-        "reference": [
+        "related": [
             {
-                "@id": "http://arachne.dainst.org/data/entity/12626",
-                "@type": "Document",
-                "label": {
+                "@id": "http://arachne.dainst.org/entity/12626",
+                "@type": "PhysicalThing",
+                "title": {
                     "de": "Basilica Aemilia. Rekonstruktion Innen"
                 }
             }
         ],
         "image": [
             {
-                "@id": "http://arachne.dainst.org/data/image/6026709",
+                "@id": "http://arachne.dainst.org/entity/6026709",
                 "@type": "Image",
-                "label": {
+                "title": {
                     "de": "D-DAI-ROM-2007.1070_2100062.jpg"
-                }
+                },
+                "file": "http://arachne.dainst.org/data/image/6026709"
             }
         ],
     },
@@ -160,28 +209,17 @@
         {
             "@id": "https://arachne.dainst.org/catalog/27",
             "@type": "Dataset",
-            "label": {
+            "title": {
                 "de": "Die Basilica Aemilia"
             },
-            "creator": "Johannes Lipps"
+            "creator": { "title": "Johannes Lipps" }
         },
         {
             "@id": "https://arachne.dainst.org/catalog/79",
             "@type": "Dataset",
-            "label": {
+            "title": {
                 "de": "Emagines"
             }
         }
-    ],
-    "publisher": "http://arachne.dainst.org",
-    "creator": "S.V.",
-    "contributor": [
-        "Paul Scheding",
-        "R. Förtsch",
-        "Julia Barbara Ochmann",
-        "Johannes Lipps"
-    ],
-    "created": "1998-08-17",
-    "lastModified": "2014-08-08",
-    "license": "http://creativecommons.org/licenses/by-nc-nd/3.0/de/"
+    ]
 }
