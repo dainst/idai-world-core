@@ -1,0 +1,187 @@
+{
+    "@id": "http://arachne.dainst.org/data/entity/5640",
+    "@type": "Record",
+    "entity": {
+        "@id": "http://arachne.dainst.org/entity/5640",
+        "label": {
+            "de": "Baukomplex der Basilica Aemilia"
+        },
+        "identifier": "5640",
+        "description": "Situation: Die Basilica liegt an der Nordseite des Forum Romanum zwischen der Curia und dem Tempel des Antoninus und der Faustina.
+    Antike Landschaft: Latium
+    Regio Rom/Italien: Regio VIII
+    Kulturepoche: römisch
+    Datierung Bauwerk: republikanisch (Chronontology) 2. Jahrzehnt, 2. Jh. v. Chr.
+    Gebäudetyp: Basilika, vierschiffig
+    Erhaltung: Die Basilica ist bis auf die Fußbodenpflasterung und die Säulenstümpfe zerstört.
+    Beschreibung: Der Basilica sind tabernae zum Forum hin vorgelagert. Von dort führen Stufen zum Platz hinab. Säulenreihen gliedern die Basilica in vier Schiffe, wobei die beiden nördlichen Schiffe eng nebeneinander liegen und auf eine Erweiterung zurückzuführen sind, die nicht zum ursprünglichen Plan der Basilica gehört. Die westliche Schmalseite verläuft parallel zur Curia und diagonal zur Achse der Basilica.
+    Ein Rekonstruktionsvorschlag nimmt ferner einen Bogen für Caius und Lucius Caesar an (nach dem Fund einer entsprechenden kolossalen Inschrift), der vom Risalit am Ostende der forumsseitigen Portikus aus die via sacra überspannt haben könnte.
+    Baugeschichte: Nach der Errichtung in den 60er Jahren des 2. Jhs. v. Chr. durch die beiden Konsuln M. Aemilius Lepidus und M. Fulvius Nobilior wurde die Basilica mehrmals zerstört und durch die Familie der Aemilier immer wieder aufgebaut. Zunächst wohl in den Jahren 80 bis 78 v. Chr., dann zu Zeiten Caesars im Jahre 54 v. Chr., nach einem Brand 14 n. Chr. und schließlich unter Tiberius im Jahre 22 n. Chr. Die letzte Restaurierung fand wohl nach dem Einfall des Alarich im Jahre 410 statt. Danach verfiel das Gebäude. Die Reste der Marmorfassade wurden schließlich von Bramante im Jahre 1500 entfernt. Der Grundriß wurde weitgehend beibehalten.
+    Ausgrabung: Die tabernae wurden von G. Boni in den Jahren 1900 bis 1914 ausgegraben. Grabungen im Inneren der Basilica fanden in den Jahren 1946 und 47 statt. Weitere Forschungen wurden von H. Bauer 1971 bis 74 durchgeführt.
+    Bemerkungen: Es ist immer noch unklar, ob die Basilica Aemilia identisch mit der Basilica Fulvia ist.",
+        "subject": [
+            {
+                "@id": "http://thesauri.dainst.org/_2746",
+                "@type": "Subject",
+                "label": {
+                    "de": "Basilika",
+                    "en": "basilica",
+                    "fr": "basilique",
+                    "it": "basilica"
+                }
+            },
+            {
+                "@id": "http://thesauri.dainst.org/_1d96b54c",
+                "@type": "Subject",
+                "label": {
+                    "de": "Bauwerke"
+                }
+            }
+        ],
+        "place": [
+            {
+                "@id": "http://gazetteer.dainst.org/place/2093895",
+                "@type": "Place",
+                "label": {
+                    "de": "Baukomplex der Basilica Aemilia"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [41.892651, 12.486088]
+                }
+            },
+            {
+                "@id": "http://gazetteer.dainst.org/place/2093883",
+                "@type": "Place",
+                "label": {
+                    "de": "Forum Romanum",
+                    "it": "Foro Romano"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [41.892283, 12.485334]
+                }
+            },
+            {
+                "@id": "http://gazetteer.dainst.org/place/2323295",
+                "@type": "Place",
+                "label": {
+                    "it": "Roma",
+                    "ar": "روما",
+                    "de": "Rom",
+                    "fr": "Rome",
+                    "en": "Rome"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [41.89143, 12.49362]
+                }
+            },
+            {
+        		"@id": "http://gazetteer.dainst.org/place/2309807",
+                "@type": "Place",
+                "label": {
+                    "it": "Italia",
+                    "ar": "إيطاليا",
+                    "de": "Italien",
+                    "fr": "Italie",
+                    "en": "Italy"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [42.83333, 12.83333]
+                }
+            }
+        ],
+        "period": [
+            {
+                "@id": "http://chronontology.dainst.org/period/EjdISVTsTkyh",
+                "@type": "Period",
+                "label": {
+                    "de": "Republikanisch",
+                    "en": "Republican"
+                }
+            },
+            {
+                "@id": "http://chronontology.dainst.org/period/4CgMSXuA85AL",
+                "@type": "Period",
+                "label": {
+                    "de": "Römisch",
+                    "en": "Roman"
+                }
+            },
+            {
+                "@id": "http://chronontology.dainst.org/period/LgCdcG02kRtJ",
+                "@type": "Period",
+                "label": {
+                    "de": "Klassische Antike",
+                    "en": "Roman"
+                },
+                "begin": -800,
+                "end": 600
+            }
+        ],
+        "literature": [
+            {
+                "@id": "http://zenon.dainst.org/Record/000314366",
+                "@type": "Literature",
+                "label": {
+                    "de": "E. Nash, Bildlexikon zur Topographie des antiken Rom I (Tübingen 1961), 174, Abb. 188-199"
+                }
+            },
+            {
+                "@id": "http://zenon.dainst.org/Record/000250584",
+                "@type": "Literature",
+                "label": {
+                    "de": "F. Coarelli, Il Foro Romano II (Rom 1985), 201 ff."
+                }
+            }
+        ],
+        "reference": [
+            {
+                "@id": "http://arachne.dainst.org/data/entity/12626",
+                "@type": "Document",
+                "label": {
+                    "de": "Basilica Aemilia. Rekonstruktion Innen"
+                }
+            }
+        ],
+        "image": [
+            {
+                "@id": "http://arachne.dainst.org/data/image/6026709",
+                "@type": "Image",
+                "label": {
+                    "de": "D-DAI-ROM-2007.1070_2100062.jpg"
+                }
+            }
+        ],
+    },
+    "dataset": [
+        {
+            "@id": "https://arachne.dainst.org/catalog/27",
+            "@type": "Dataset",
+            "label": {
+                "de": "Die Basilica Aemilia"
+            },
+            "creator": "Johannes Lipps"
+        },
+        {
+            "@id": "https://arachne.dainst.org/catalog/79",
+            "@type": "Dataset",
+            "label": {
+                "de": "Emagines"
+            }
+        }
+    ],
+    "publisher": "http://arachne.dainst.org",
+    "creator": "S.V.",
+    "contributor": [
+        "Paul Scheding",
+        "R. Förtsch",
+        "Julia Barbara Ochmann",
+        "Johannes Lipps"
+    ],
+    "created": "1998-08-17",
+    "lastModified": "2014-08-08",
+    "license": "http://creativecommons.org/licenses/by-nc-nd/3.0/de/"
+}
