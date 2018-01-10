@@ -476,6 +476,11 @@ Examples:
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>InformationObject</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class comprises identifiable immaterial items and corresponds to E73 Information Object in the CIDOC-CRM.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>PhysicalThing</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents all types of things that have a physical extent. Corresponds to E18 Physical Thing in the CIDOC-CRM.</Literal>
     </AnnotationAssertion>
